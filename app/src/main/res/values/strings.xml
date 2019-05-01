@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">UFBAShop</string>
-    <string name="facebook_application_id">xxxxxxxxxxxxxx</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
