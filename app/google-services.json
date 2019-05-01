@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131454790501",
+    "firebase_url": "https://ufbashop-6a5ba.firebaseio.com",
+    "project_id": "ufbashop-6a5ba",
+    "storage_bucket": "ufbashop-6a5ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131454790501:android:e658c601e4515360",
+        "android_client_info": {
+          "package_name": "br.ufba.ufbashop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131454790501-4b3asmb93j9j5flhdg5kof1k81q2t3mg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ufba.ufbashop",
+            "certificate_hash": "c8a65c5f3a3e2f4a57209b9697fc4e18d7ebc711"
+          }
+        },
+        {
+          "client_id": "131454790501-0gp389et4lrehfcmpb3pbqcriji6nnct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWQ3Y7WYOhVQeDYx9eMRED-S3SUBlmeNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131454790501-0gp389et4lrehfcmpb3pbqcriji6nnct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

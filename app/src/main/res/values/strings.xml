@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UFBAShop</string>
+    <string name="facebook_application_id">xxxxxxxxxxxxxx</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="lista_de_desejos">Salvos</string>
+    <string name="imagem_do_produto">Imagem do Produto</string>
+</resources>
