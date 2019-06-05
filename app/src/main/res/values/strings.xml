@@ -4,6 +4,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notificações</string>
-    <string name="lista_de_desejos">Salvos</string>
+    <string name="desire_list">Salvos</string>
     <string name="imagem_do_produto">Imagem do Produto</string>
+    <string name="price_module">R$ %.2f</string>
+    <string name="discount_module">%d %%</string>
 </resources>

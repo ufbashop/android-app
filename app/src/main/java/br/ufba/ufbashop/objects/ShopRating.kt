@@ -4,7 +4,7 @@ import java.util.Date
 
 data class Comment (
     val comment : String = "",
-    val date: Date
+    val timestamp: Long
 )
 
 data class ShopRating (
