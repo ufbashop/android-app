@@ -8,4 +8,13 @@
     <string name="imagem_do_produto">Imagem do Produto</string>
     <string name="price_module">R$ %.2f</string>
     <string name="discount_module">%d %%</string>
+    <string name="navigation_profile">Perfil</string>
+    <string name="nav_manage_shop">Criar ou Admnistrar Lojas</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="seller_functions">Funções Vendedor</string>
+    <string name="user_functions">Funções Usuário</string>
+    <string name="nav_desire_list">Lista de Desejos</string>
+    <string name="form_shop_name">Nome da Loja</string>
+    <string name="time_picker_title">Horário de Funcionamento</string>
+    <string name="form_location_info_header">Informações de Localização</string>
 </resources>

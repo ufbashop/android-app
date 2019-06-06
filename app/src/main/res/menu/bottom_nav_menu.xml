@@ -11,9 +11,13 @@
             android:icon="@drawable/ic_list_black_24dp"
             android:title="@string/desire_list"/>
 
-    <item
+    <!--item
             android:id="@+id/navigation_notifications"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/title_notifications"/>
+            android:title="@string/title_notifications"/-->
+    <item
+            android:id="@+id/navigation_user"
+            android:icon="@drawable/ic_user_back_24dp"
+            android:title="@string/navigation_profile"/>
 
 </menu>

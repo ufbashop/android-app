@@ -1,0 +1,12 @@
+<android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/profile_fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:menu="@menu/profile_navigation_view"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>

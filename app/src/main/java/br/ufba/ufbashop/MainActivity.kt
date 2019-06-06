@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import br.ufba.ufbashop.fragments.HomeFragment
+import br.ufba.ufbashop.fragments.ProfileFragment
 import br.ufba.ufbashop.objects.Comment
 import br.ufba.ufbashop.objects.Shop
 import br.ufba.ufbashop.objects.ShopRating
@@ -34,8 +35,8 @@ class MainActivity : AppCompatActivity() {
                 //textMessage.setText(R.string.desire_list)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
-                //textMessage.setText(R.string.title_notifications)
+            R.id.navigation_user -> {
+                openFragment(ProfileFragment())
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -77,64 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun writeThisShit() {
-        val shop = Shop(
-            name = "Loja de Teste",
-            mainSellingLocation = "PAF I",
-            score = 4.53,
-            ratings = arrayListOf (
-                ShopRating(
-                    score = 5.0,
-                    comment = Comment(
-                        comment="Bom produto de fato",
-                        timestamp = Date().time
-                    )
-                ),
-                ShopRating(
-                    score = 5.0,
-                    comment = Comment(
-                        comment="produto bonito",
-                        timestamp = Date().time
-                    )
-                ),
-                ShopRating(
-                    score = 5.0,
-                    comment = Comment(
-                        comment="Praaaaaaaaa",
-                        timestamp = Date().time
-                    )
-                ),
-                ShopRating(
-                    score = 5.0,
-                    comment = Comment(
-                        comment="Nem sei q to fznd",
-                        timestamp = Date().time
-                    )
-                ),
-                ShopRating(
-                    score = 1.0,
-                    comment = Comment(
-                        comment="mds q lixo",
-                        timestamp = Date().time
-                    )
-                ),
-                ShopRating(
-                    score = 2.0,
-                    comment = Comment(
-                        comment="se mate vendedor, que lixo de produto",
-                        timestamp = Date().time
-                    )
-                )
-            ),
-            products = arrayListOf(),
-            sellers = arrayListOf(),
-            logo = ""
-        )
 
-        val dataRef  = FirebaseDatabase.getInstance().getReference("shops")
-        val key = dataRef.push().key?: "penisu"
-        shop.uuid = key
-        dataRef.setValue(shop)
-        Toast.makeText(this, "FUck this shit", Toast.LENGTH_SHORT).show()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

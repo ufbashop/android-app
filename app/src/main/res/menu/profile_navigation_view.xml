@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:title="@string/user_functions">
+        <menu>
+            <item
+                    android:id="@+id/nav_favorites"
+                    android:icon="@drawable/ic_favorite_black_24dp"
+                    android:title="@string/nav_favorites" />
+            <item
+                    android:id="@+id/nav_desire_list"
+                    android:icon="@drawable/ic_list_black_24dp"
+                    android:title="@string/nav_desire_list" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/seller_functions">
+        <menu>
+            <item
+                    android:id="@+id/nav_manage_shops"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="@string/nav_manage_shop" />
+
+        </menu>
+    </item>
+
+</menu>
