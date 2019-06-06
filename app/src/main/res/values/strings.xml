@@ -1,20 +1,44 @@
 <resources>
     <string name="app_name">UFBAShop</string>
     <string name="title_activity_main2">Main2Activity</string>
+
+    <!--Main Activity Bottom Nav View-->
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notificações</string>
     <string name="desire_list">Salvos</string>
+    <string name="navigation_profile">Perfil</string>
+
+    <string name="time_picker_title">Horário de Funcionamento</string>
+
+    <!--Product List Item-->
     <string name="imagem_do_produto">Imagem do Produto</string>
     <string name="price_module">R$ %.2f</string>
     <string name="discount_module">%d %%</string>
-    <string name="navigation_profile">Perfil</string>
+
+    <!--Profile Options-->
     <string name="nav_manage_shop">Criar ou Admnistrar Lojas</string>
     <string name="nav_favorites">Favoritos</string>
     <string name="seller_functions">Funções Vendedor</string>
     <string name="user_functions">Funções Usuário</string>
     <string name="nav_desire_list">Lista de Desejos</string>
-    <string name="form_shop_name">Nome da Loja</string>
-    <string name="time_picker_title">Horário de Funcionamento</string>
+
+    <!--Form string resources-->
+    <string name="form_shop_name">Nome da Loja (*)</string>
     <string name="form_location_info_header">Informações de Localização</string>
+    <string name="form_campus">Campus</string>
+    <string name="form_localization_header">Localização (Locais próximos da loja)</string>
+    <string name="form_no_fixed_location">Não tenho localização fixa</string>
+    <string name="form_contact_time">Horários e contato</string>
+    <string name="form_open_hour">Abertura</string>
+    <string name="form_close_hour">Fechamento</string>
+    <string name="form_phone_number">Telefone</string>
+    <string name="form_campus_hint">Campus Ondina</string>
+    <string name="form_lozalization_hint">À frente do PAF II</string>
+    <string name="form_shop_name_hint">UFBAShop</string>
+    <string name="form_open_hour_hint">12:00</string>
+    <string name="form_close_hour_hint">18:00</string>
+    <string name="form_phone_number_hint">(71) 9xxxx-xxxx</string>
+    <string name="form_description">Descrição</string>
+    <string name="form_description_hint">Somos uma loja especializada em venda de camisas e acessórios com temas relacionados à UFBA</string>
 </resources>
