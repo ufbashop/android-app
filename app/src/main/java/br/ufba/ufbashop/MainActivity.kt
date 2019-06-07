@@ -6,17 +6,11 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
 import br.ufba.ufbashop.fragments.HomeFragment
 import br.ufba.ufbashop.fragments.ProfileFragment
-import br.ufba.ufbashop.objects.Comment
-import br.ufba.ufbashop.objects.Shop
-import br.ufba.ufbashop.objects.ShopRating
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
     object RequestIds {
@@ -31,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 //textMessage.setText(R.string.title_home)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_desire_list -> {
+            R.id.navigation_shops -> {
                 //textMessage.setText(R.string.desire_list)
                 return@OnNavigationItemSelectedListener true
             }
