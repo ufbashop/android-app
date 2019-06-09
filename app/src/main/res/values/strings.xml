@@ -6,7 +6,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notificações</string>
-    <string name="desire_list">Salvos</string>
+    <string name="nav_shops">Lojas</string>
     <string name="navigation_profile">Perfil</string>
 
     <string name="time_picker_title">Horário de Funcionamento</string>
@@ -33,12 +33,13 @@
     <string name="form_open_hour">Abertura</string>
     <string name="form_close_hour">Fechamento</string>
     <string name="form_phone_number">Telefone</string>
-    <string name="form_campus_hint">Campus Ondina</string>
-    <string name="form_lozalization_hint">À frente do PAF II</string>
+    <string name="form_campus_hint">Ondina</string>
+    <string name="form_lozalization_hint">A frente do PAF II</string>
     <string name="form_shop_name_hint">UFBAShop</string>
     <string name="form_open_hour_hint">12:00</string>
     <string name="form_close_hour_hint">18:00</string>
-    <string name="form_phone_number_hint">(71) 9xxxx-xxxx</string>
+    <string name="form_phone_number_hint">(071) 9xxxx-xxxx</string>
     <string name="form_description">Descrição</string>
     <string name="form_description_hint">Somos uma loja especializada em venda de camisas e acessórios com temas relacionados à UFBA</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

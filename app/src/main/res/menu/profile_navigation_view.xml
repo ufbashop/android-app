@@ -6,6 +6,10 @@
     <item android:title="@string/user_functions">
         <menu>
             <item
+                    android:id="@+id/nav_edit_profile"
+                    android:icon="@drawable/ic_edit_black_24dp"
+                    android:title="Editar Perfil" />
+            <item
                     android:id="@+id/nav_favorites"
                     android:icon="@drawable/ic_favorite_black_24dp"
                     android:title="@string/nav_favorites" />

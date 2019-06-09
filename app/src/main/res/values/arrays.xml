@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="campus">
+        <item>Ondina</item>
+        <item>Federação</item>
+        <item>Barreiras</item>
+        <item>Vitória da Conquista</item>
+        <item>Canela</item>
+    </string-array>
+</resources>

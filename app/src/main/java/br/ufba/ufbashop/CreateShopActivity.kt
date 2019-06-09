@@ -69,8 +69,8 @@ class CreateShopActivity : AppCompatActivity() {
             starts = form_open_hour.text.toString(),
             ends = form_close_hour.text.toString(),
             campus = form_shop_campus.text.toString(),
-            ratings = arrayListOf(),
-            products = arrayListOf(),
+            ratings = ArrayList(),
+            products = ArrayList(),
             phoneNumber = form_phone_number.text.toString(),
             shopDescription = form_shop_description.text.toString()
         )
