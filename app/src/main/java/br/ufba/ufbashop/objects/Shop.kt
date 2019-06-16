@@ -1,14 +1,15 @@
 package br.ufba.ufbashop.objects
 
 data class Shop (
-    val name: String,
-    val logoImage: String?,
-    val mainSellingLocation: String,
-    val starts: String,
-    val ends: String,
-    val campus: String,
-    val ratings: List<ShopRating>,
-    val products: List<Product>,
-    val phoneNumber: String?,
-    val shopDescription: String
+    val name: String = "",
+    val logoImage: String? = null,
+    val mainSellingLocation: String = "",
+    val starts: String = "00:00",
+    val ends: String = "00:00",
+    val campus: String = "",
+    val ratings: List<ShopRating> = emptyList(),
+    val products: List<Product> = emptyList(),
+    val phoneNumber: String? = null,
+    val shopDescription: String = "",
+    val userId: String = ""
 )

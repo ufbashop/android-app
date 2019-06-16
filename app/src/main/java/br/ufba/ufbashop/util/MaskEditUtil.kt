@@ -12,15 +12,14 @@ object MaskEditUtil {
     /**
      * Método que deve ser chamado para realizar a formatação
      *
-     * @param ediTxt
+     * @param editText
      * @param mask
      * @return
      */
-
     fun makeMask(editText: EditText, mask:String) {
         editText.addTextChangedListener(this.mask(editText, mask))
     }
-    fun mask(ediTxt: EditText, mask: String): TextWatcher {
+    private fun mask(ediTxt: EditText, mask: String): TextWatcher {
         return object : TextWatcher {
             var isUpdating: Boolean = false
             var old = ""
@@ -30,8 +29,8 @@ object MaskEditUtil {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                val str = MaskEditUtil.unmask(s.toString())
-                var mascara = ""
+                val str = unmask(s.toString())
+                val mascara = StringBuilder("")
                 if (isUpdating) {
                     old = str
                     isUpdating = false
@@ -40,31 +39,24 @@ object MaskEditUtil {
                 var i = 0
                 for (m in mask.toCharArray()) {
                     if (m != '#' && str.length > old.length) {
-                        mascara += m
+                        mascara.append(m)
                         continue
                     }
-                    try {
-                        mascara += str[i]
-                    } catch (e: Exception) {
+                    if(i < str.length)
+                        mascara.append(str[i])
+                    else
                         break
-                    }
-
                     i++
                 }
                 isUpdating = true
-                ediTxt.setText(mascara)
+                ediTxt.setText(mascara.toString())
                 ediTxt.setSelection(mascara.length)
             }
         }
     }
 
     fun unmask(s: String): String {
-        return s.replace("[.]".toRegex(), "")
-            .replace("[-]".toRegex(), "")
-            .replace("[/]".toRegex(), "")
-            .replace("[(]".toRegex(), "")
-            .replace("[ ]".toRegex(), "")
-            .replace("[:]".toRegex(), "")
-            .replace("[)]".toRegex(), "")
+        // The app uses only number-only strings.
+        return s.replace("[^\\d+]".toRegex(), "")
     }
 }

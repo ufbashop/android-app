@@ -10,7 +10,7 @@ import br.ufba.ufbashop.objects.Product
 class ProductAdapter(products: List<Product>, activity: Activity) :
         BindAdapter<Product>(products, activity) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BindHolder<Product> {
-        return ProductsHolder(LayoutInflater.from(mActivity), parent)
+        return ProductsHolder(LayoutInflater.from(mContext), parent)
     }
 
 }

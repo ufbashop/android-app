@@ -22,42 +22,35 @@
                     android:id="@+id/form_shop_name"
                     android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/form_shop_image_card"
+                    app:layout_constraintStart_toEndOf="@+id/form_shop_image"
                     android:layout_marginStart="8dp"
                     app:layout_constraintHorizontal_bias="0.0"
                     android:layout_marginTop="8dp"
                     app:layout_constraintTop_toTopOf="@+id/divider"/>
 
-            <android.support.v7.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/form_shop_image_card"
+
+            <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@drawable/no_image"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/form_shop_image"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp">
+                    app:layout_constraintTop_toTopOf="parent"/>
 
-                <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:background="#FAFAFA"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+                    android:id="@+id/form_shop_image_button"
+                    app:layout_constraintTop_toBottomOf="@+id/form_shop_image"
+                    app:layout_constraintEnd_toEndOf="@+id/form_shop_image"
+                    app:layout_constraintStart_toStartOf="@+id/form_shop_image"/>
 
-                    <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            tools:srcCompat="@drawable/no_image"
-                            android:scaleType="fitXY"
-                            android:id="@+id/form_shop_image"/>
-
-                    <ImageButton
-                            android:layout_width="wrap_content"
-                            android:background="#FAFAFA"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
-                            android:id="@+id/form_shop_image_button"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
 
             <View
                     android:id="@+id/divider"
@@ -65,11 +58,11 @@
                     android:layout_height="2dp"
                     style="@style/Divider"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/form_shop_image_card"
+                    app:layout_constraintStart_toEndOf="@+id/form_shop_image"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"
                     android:layout_marginTop="4dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
 
             <View
                     android:id="@+id/divider2"
@@ -77,8 +70,7 @@
                     android:layout_height="2dp"
                     style="@style/Divider"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/form_shop_image_card"
-                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/form_shop_image_button"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -115,9 +107,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="32dp"
-                    app:layout_constraintStart_toEndOf="@+id/form_shop_image_card"
+                    app:layout_constraintTop_toTopOf="@+id/form_shop_image"
+                    app:layout_constraintStart_toEndOf="@+id/form_shop_image"
                     android:layout_marginStart="8dp"/>
 
             <TextView

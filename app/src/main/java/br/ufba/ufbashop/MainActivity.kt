@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import br.ufba.ufbashop.fragments.HomeFragment
 import br.ufba.ufbashop.fragments.ProfileFragment
+import br.ufba.ufbashop.fragments.ShopsFragment
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_shops -> {
-                //textMessage.setText(R.string.desire_list)
+                openFragment(ShopsFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_user -> {
@@ -58,9 +59,7 @@ class MainActivity : AppCompatActivity() {
             AuthUI.IdpConfig.FacebookBuilder().build())
 
 
-        if(FirebaseAuth.getInstance().currentUser != null) {
-            writeThisShit()
-        } else {
+        if(FirebaseAuth.getInstance().currentUser == null) {
             startActivityForResult(
                 AuthUI.getInstance()
                     .createSignInIntentBuilder()
@@ -71,9 +70,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun writeThisShit() {
-
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

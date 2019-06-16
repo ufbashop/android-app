@@ -42,4 +42,6 @@
     <string name="form_description">Descrição</string>
     <string name="form_description_hint">Somos uma loja especializada em venda de camisas e acessórios com temas relacionados à UFBA</string>
     <string name="sign_out">Sign Out</string>
+
+    <string name="item_open_close">%s - %s</string>
 </resources>

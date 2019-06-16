@@ -8,16 +8,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.ufba.ufbashop.CreateShopActivity
+import br.ufba.ufbashop.EditShopsActivity
 import br.ufba.ufbashop.R
 import com.firebase.ui.auth.AuthUI
-import kotlinx.android.synthetic.main.profile_fragment.*
-import kotlinx.android.synthetic.main.profile_fragment_header.view.*
+import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_header_profile.view.*
 
 
 class ProfileFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.profile_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,7 +36,7 @@ class ProfileFragment : Fragment() {
         nav_view.setNavigationItemSelectedListener{ item ->
             when(item.itemId) {
                 R.id.nav_manage_shops -> {
-                    val intent = Intent(activity, CreateShopActivity::class.java)
+                    val intent = Intent(activity, EditShopsActivity::class.java)
                     startActivity(intent)
                     true
                 }

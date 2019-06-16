@@ -26,6 +26,9 @@
         <activity android:name="br.ufba.ufbashop.CreateShopActivity"
                   android:label="Criar Loja">
         </activity>
+        <activity android:name="br.ufba.ufbashop.EditShopsActivity"
+                  android:label="@string/nav_manage_shop">
+        </activity>
     </application>
 
 </manifest>
