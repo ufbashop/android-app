@@ -2,7 +2,7 @@ package br.ufba.ufbashop.util
 
 import android.app.Activity
 import android.content.Intent
-import br.ufba.ufbashop.MainActivity
+import br.ufba.ufbashop.activities.MainActivity
 
 object FirebaseUtils {
     fun goBackToMain(activity: Activity) {

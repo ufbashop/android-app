@@ -1,5 +1,8 @@
 package br.ufba.ufbashop.objects
 
+import android.os.Parcel
+import android.os.Parcelable
+
 data class Shop (
     val name: String = "",
     val logoImage: String? = null,
@@ -11,5 +14,6 @@ data class Shop (
     val products: List<Product> = emptyList(),
     val phoneNumber: String? = null,
     val shopDescription: String = "",
-    val userId: String = ""
+    val userId: String = "",
+    val shopId: String = ""
 )

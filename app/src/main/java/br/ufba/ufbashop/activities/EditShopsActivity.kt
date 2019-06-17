@@ -1,11 +1,10 @@
-package br.ufba.ufbashop
+package br.ufba.ufbashop.activities
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import br.ufba.ufbashop.R
 import br.ufba.ufbashop.adapters.ShopAdapter
 import br.ufba.ufbashop.objects.Shop
 import br.ufba.ufbashop.util.FirebaseUtils
@@ -13,7 +12,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_edit_shops.*
+import kotlinx.android.synthetic.main.activity_edit.*
 
 class EditShopsActivity : AppCompatActivity() {
     private lateinit var mInstance: FirebaseDatabase
@@ -21,7 +20,7 @@ class EditShopsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_shops)
+        setContentView(R.layout.activity_edit)
         mInstance = FirebaseDatabase.getInstance()
 
         if(mUser != null) {
@@ -33,8 +32,9 @@ class EditShopsActivity : AppCompatActivity() {
                 .build()
             val adapter = ShopAdapter(this, options)
             adapter.startListening()
-            user_shops_recycler_view.layoutManager = LinearLayoutManager(applicationContext)
-            user_shops_recycler_view.adapter = adapter
+            user_recycler_view.layoutManager =
+                LinearLayoutManager(applicationContext)
+            user_recycler_view.adapter = adapter
             add_shop_button.setOnClickListener {
                 val intent = Intent(applicationContext, CreateShopActivity::class.java)
                 startActivity(intent)

@@ -1,10 +1,8 @@
 package br.ufba.ufbashop.objects
 
-import java.util.Date
-
 data class Comment (
     val comment : String = "",
-    val timestamp: Long
+    val timestamp: Long = 0
 )
 
 data class ShopRating (

@@ -14,10 +14,10 @@
     <!--Product List Item-->
     <string name="imagem_do_produto">Imagem do Produto</string>
     <string name="price_module">R$ %.2f</string>
-    <string name="discount_module">%d %%</string>
+    <string name="discount_module">%d %% OFF</string>
 
     <!--Profile Options-->
-    <string name="nav_manage_shop">Criar ou Admnistrar Lojas</string>
+    <string name="nav_manage_shop">Criar ou Administrar Lojas</string>
     <string name="nav_favorites">Favoritos</string>
     <string name="seller_functions">Funções Vendedor</string>
     <string name="user_functions">Funções Usuário</string>
@@ -27,21 +27,37 @@
     <string name="form_shop_name">Nome da Loja (*)</string>
     <string name="form_location_info_header">Informações de Localização</string>
     <string name="form_campus">Campus</string>
-    <string name="form_localization_header">Localização (Locais próximos da loja)</string>
+    <string name="form_localization_header">Localização (Locais próximos)</string>
     <string name="form_no_fixed_location">Não tenho localização fixa</string>
     <string name="form_contact_time">Horários e contato</string>
     <string name="form_open_hour">Abertura</string>
     <string name="form_close_hour">Fechamento</string>
     <string name="form_phone_number">Telefone</string>
-    <string name="form_campus_hint">Ondina</string>
+    <string name="form_campus_hint">Campus</string>
     <string name="form_lozalization_hint">A frente do PAF II</string>
-    <string name="form_shop_name_hint">UFBAShop</string>
-    <string name="form_open_hour_hint">12:00</string>
-    <string name="form_close_hour_hint">18:00</string>
-    <string name="form_phone_number_hint">(071) 9xxxx-xxxx</string>
+    <string name="form_shop_name_hint">Nome da Loja</string>
+    <string name="form_open_hour_hint">Abertura</string>
+    <string name="form_close_hour_hint">Fechamento</string>
+    <string name="form_phone_number_hint">Número de Telefone</string>
     <string name="form_description">Descrição</string>
-    <string name="form_description_hint">Somos uma loja especializada em venda de camisas e acessórios com temas relacionados à UFBA</string>
+    <string name="form_description_hint">Descrição da loja</string>
     <string name="sign_out">Sign Out</string>
 
     <string name="item_open_close">%s - %s</string>
+    <string name="edit_profile_hint_username">Nome de Usuário</string>
+
+    <string name="hour_error">Horário Inválido</string>
+    <string name="shop_name_error">Insira um nome para a loja</string>
+    <string name="username_error">Campo obrigatório</string>
+
+    <!--Database Paths-->
+    <string name="path_user_pics">users/%s/images</string>
+
+    <string name="nav_shop_products">Produtos</string>
+    <string name="nav_shop_ratings">Avaliações</string>
+    <string name="form_product_discount">Desconto (%)</string>
+    <string name="form_product_price">Preço</string>
+    <string name="form_product_description">Descrição do Produto</string>
+    <string name="product_used">Produto Usado?</string>
+    <string name="product_name_hint">Nome do Produto</string>
 </resources>

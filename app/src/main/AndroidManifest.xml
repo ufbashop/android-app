@@ -16,18 +16,31 @@
             android:theme="@style/Light"
             tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="br.ufba.ufbashop.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="br.ufba.ufbashop.CreateShopActivity"
+        <activity android:name="br.ufba.ufbashop.activities.CreateShopActivity"
                   android:label="Criar Loja">
         </activity>
-        <activity android:name="br.ufba.ufbashop.EditShopsActivity"
-                  android:label="@string/nav_manage_shop">
+        <activity android:name="br.ufba.ufbashop.activities.EditShopsActivity"
+                  android:label="Administrar Lojas">
+        </activity>
+        <activity android:name="br.ufba.ufbashop.activities.EditProfileActivity"
+                  android:label="Editar Perfil">
+        </activity>
+        <activity android:name="br.ufba.ufbashop.activities.SingleShopActivity"
+                  android:label="Loja">
+        </activity>
+        <activity android:name="br.ufba.ufbashop.activities.ShopProductsActivity"
+                  android:label="Loja">
+        </activity>
+
+        <activity android:name="br.ufba.ufbashop.activities.CreateProductActivity"
+                  android:label="Adicionar Produtos">
         </activity>
     </application>
 

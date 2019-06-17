@@ -7,4 +7,12 @@
         <item>Vitória da Conquista</item>
         <item>Canela</item>
     </string-array>
+
+    <string-array name="tags_suggestions">
+        <item>Livros</item>
+        <item>Roupas</item>
+        <item>Acessórios</item>
+        <item>Alimentos</item>
+        <item>Eletrônicos</item>
+    </string-array>
 </resources>

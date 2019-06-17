@@ -1,11 +1,12 @@
-package br.ufba.ufbashop
+package br.ufba.ufbashop.activities
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
+import br.ufba.ufbashop.R
 import br.ufba.ufbashop.fragments.HomeFragment
 import br.ufba.ufbashop.fragments.ProfileFragment
 import br.ufba.ufbashop.fragments.ShopsFragment

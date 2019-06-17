@@ -1,4 +1,4 @@
-<android.support.design.widget.NavigationView
+<com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         app:headerLayout="@layout/fragment_header_profile"
         android:layout_width="match_parent"

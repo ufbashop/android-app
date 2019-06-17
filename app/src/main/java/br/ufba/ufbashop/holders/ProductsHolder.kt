@@ -1,7 +1,9 @@
 package br.ufba.ufbashop.holders
 
+import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -16,17 +18,23 @@ class ProductsHolder(inflater: LayoutInflater, parent: ViewGroup) :
     private var mProductPrice: TextView = itemView.findViewById(R.id.product_price)
     private var mProductDiscount: TextView = itemView.findViewById(R.id.product_discount)
     private var mProductDescription: TextView = itemView.findViewById(R.id.product_description)
-
-    override fun bind(item: Product, context: Context){
+    private var mProductTags: TextView = itemView.findViewById(R.id.product_tags)
+    override fun bind(item: Product, context: Activity){
         Glide.with(context)
             .load(getStorageReference(item.mainImage))
             .into(mProductImage)
         mProductPrice.text = context.resources.getString(
             R.string.price_module, item.price * (1 - item.discount))
         val discount: Double = item.discount * 100
-        mProductDiscount.text = context.resources.getString(
-            R.string.discount_module, discount.roundToInt())
+        if(item.discount > 0) {
+            mProductDiscount.visibility = View.VISIBLE
+            mProductDiscount.text = context.resources.getString(
+                R.string.discount_module, discount.roundToInt()
+            )
+        } else {
+            mProductDiscount.visibility = View.GONE
+        }
         mProductDescription.text = item.description
-
+        mProductTags.text = item.tags.toString()
     }
 }
